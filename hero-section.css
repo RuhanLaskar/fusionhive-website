@@ -78,7 +78,7 @@ html, body {
 /* Font */
 @font-face {
   font-family: "Brittany Signature";
-  src: url("fonts/Brittany.ttf") format("truetype");
+  src: url("Brittany.ttf") format("truetype");
 }
 
 /* Logo */
