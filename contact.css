@@ -1,0 +1,258 @@
+.contact-us-section {
+  padding: 7rem 1rem;
+  background: transparent;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Center the "CONTACT US" header at top */
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-header h2 {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(to right, #6268AA 23.51%, #8F98FF 43%, #9A4281 55%, #AC134B 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-header h2::after {
+  content: '';
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 280px;
+  height: 6px;
+  background-image: url('https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/client-Line_swpeyd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Side by side left/right */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contact-left {
+    top: -20%;
+  position: relative;
+}
+
+.gradient-bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  transform: translateY(-50%);
+  width: auto;  /* adjust as needed */
+  height: 450px;  /* or any size you want */
+  opacity: 1;  /* or as you prefer */
+  z-index: 0;   /* behind the text */
+}
+
+
+.contact-text {
+    left: 20%;
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+}
+
+.small-heading {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  padding: 0.5rem 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn {
+    margin: 0 auto;
+  background: #ffffff;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #e0e0e0, #c0c0c0);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .contact-header {
+    margin-bottom: 4rem;
+  }
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+  .contact-header h2::after {
+    width: 210px;
+    margin-top: 0;
+  }
+  .contact-container {
+    padding: auto;
+  }
+  .small-heading {
+    font-size: 1rem;
+  }
+  .contact-text h2 {
+    font-size: 2.1rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media (max-width: 468px) {
+  .contact-us-section {
+    padding: 4rem 1rem;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact-header h2::after {
+    width: 180px;
+    height: 4px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .contact-left {
+    top: 0;
+    text-align: center;
+  }
+
+  .gradient-bg {
+    height: 320px;
+    opacity: 1;
+    left: -10%;
+    bottom: 30%;
+  }
+
+  .contact-text {
+    max-width: 100%;
+    left: 0;
+  }
+
+  .contact-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .small-heading {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .contact-right {
+    padding-top: 30px; /* Hide the right section on small screens */
+  }
+}

@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="our-project.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="hero-section.css">
+    <link rel="stylesheet" href="our-services.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="our-winning-recipe.css">
+    <link rel="stylesheet" href="filp-card.css">
+    <link rel="stylesheet" href="client-testimonial.css">
+    <link rel="stylesheet" href="our-clients.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="case-study.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Fusionhive</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#" onclick="location.reload(); return false;">Fusionhive.in</a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="hamburger" id="hamburger-btn" >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mainNav = document.getElementById('main-nav');
+      const navLinks = document.querySelectorAll('.main-nav a');
+
+      // Toggle hamburger menu
+      hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+
+      // Close menu when any link is clicked
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburgerBtn.classList.remove('active');
+          mainNav.classList.remove('active');
+        });
+      });
+    </script>
+
+
+
+    <section class="hero-section" id="home">
+        <div class="left">
+            <h1 class="h1">HELLO , WE'RE</h1>
+            <h2 class="hero-uppercase">Fusionhive</h2>
+            <h3 class="subheading">A Social Media Marketing Agency</h3>
+                <p class="description"> We’re a group of ambitious people who help brands find their authentic voice and the audience that wants to hear it.</p>
+            <div class="button-group">
+                <a href="https://calendly.com/akshay_fusionhive" target="_blank" rel="noopener">
+                  <button class="btn btn-light">Schedule a Meeting</button>
+                </a>
+
+                <button class="btn btn-dark">Download Brochure</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="hero-image-container">
+                <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871786/hero-image_zrxnwo.svg" alt="Hero Image" class="hero-image" lazyload="eager">
+            </div>
+                    <div class="statboxes">
+                        <div class="statbox" data-target="121" data-speed="0.8">
+                            <div class="statbox-value">0</div>
+                            <div class="statbox-label">Happy Clients</div>
+                        </div>
+                        <div class="statbox" data-target="6978" data-speed="1">
+                            <div class="statbox-value">0</div>
+                            <div class="statbox-label">Projects</div>
+                        </div>
+                        <div class="statbox" data-target="4800000000" data-speed="1.5">
+                            <div class="statbox-value">0</div>
+                            <div class="statbox-label">Views</div>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+
+
+            
+<!-- Our Services Section -->
+<section class="services-section" id="services">
+  <!-- Background Spiral -->
+  <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871774/dotted-spiral_wgm0yy.svg" alt="Spiral Background" class="spiral-bg" lazyload="true" />
+
+  <!-- Heading & Subheading -->
+  <div class="heading-wrapper">
+    <h2 class="section-heading">OUR SERVICES</h2>
+    <p class="subheading1">
+      Every business wants to sell more. You sell more when you are seen more.
+      But with our services, we make sure that you’re not just seen, but remembered, just like a good movie.
+    </p>
+  </div>
+
+  <!-- Carousel Wrapper -->
+  <div class="carousel-container">
+    <div class="cards-slider">
+      <!-- Card 1: Social Media Marketing -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" loading="lazy" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871781/social-icon_yls5hl.svg" class="icon" alt="Social Icon" loading="lazy" />
+          <h3 class="card-title">Social<br />Media<br />Marketing</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>TikTok, Instagram, LinkedIn, YouTube, and more</strong>
+          <p>Strategic campaigns using a secret Hive Strategy that delivers 2.7 M+ organic views/month.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Website Design -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871783/web-icon_dqnyw2.svg" class="icon" alt="Website Icon" />
+          <h3 class="card-title">Website<br />Design</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>Front-end, Back-end, SEO</strong>
+          <p>Custom-built websites that combine seamless functionality with aesthetic design, optimized for both UX and rankings.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Video Editing -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871783/video-icon_zsriqk.svg" class="icon" alt="Video Icon" />
+          <h3 class="card-title">Video<br />Editing</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>Tutorials, Vlogs, Podcasts, etc.</strong>
+          <p>We edit your raw footage into engaging stories that boost your brand visibility and keep viewers hooked.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Graphic Design -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871775/graphic-icon_lte620.svg" class="icon" alt="Graphic Icon" />
+          <h3 class="card-title">Graphic<br />Design</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>Logos, Decks, Branding</strong>
+          <p>We create visuals that speak clearly—designs that aren't just beautiful, but also built for business impact.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: AI Content Creation -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/ai-icon_mkx55k.svg" class="icon" alt="AI Icon" />
+          <h3 class="card-title">AI<br />Content<br />Creation</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>Quick, Affordable, Scalable</strong>
+          <p>Produce high-quality content with AI tools that eliminate the need for filming and reduce your cost dramatically.</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Full Scale Production -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871774/fullscale-icon_b23wbb.svg" class="icon" alt="Production Icon" />
+          <h3 class="card-title">Full Scale<br />Production<br />+Distribution</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>End-to-End Execution</strong>
+          <p>From scripting to shooting to distribution, we handle everything with precision and creative direction.</p>
+        </div>
+      </div>
+
+      <!-- Card 7: CGI 2D–3D Animation -->
+      <div class="service-card">
+        <div class="card-top">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/card-bg_rmvwqz.svg" alt="Card Background" class="card-bg" />
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871738/cgi-icon_uacdaw.svg" class="icon" alt="CGI Icon" />
+          <h3 class="card-title">CGI<br />2D–3D<br />Animation</h3>
+        </div>
+        <div class="card-bottom">
+          <strong>Visual Storytelling</strong>
+          <p>Bring ideas to life with world-class 2D & 3D animation crafted for product demos, ads, or branding visuals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function initMobileCarousel() {
+  if (window.innerWidth > 468) return;
+
+  const slider = document.querySelector('.cards-slider');
+  const cards = document.querySelectorAll('.service-card');
+  const dotsContainer = document.querySelector('.mobile-dots');
+
+  if (!slider || !cards.length || !dotsContainer) return;
+
+  cards.forEach(card => {
+    card.style.transform = '';
+    card.style.opacity = '';
+    card.style.zIndex = '';
+    card.style.filter = '';
+  });
+
+  dotsContainer.innerHTML = '';
+  cards.forEach((_, index) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      cards[index].scrollIntoView({ behavior: 'smooth', inline: 'start' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  slider.addEventListener('scroll', () => {
+    const cardWidth = cards[0].offsetWidth + 16;
+    const scrollLeft = slider.scrollLeft;
+    const index = Math.round(scrollLeft / cardWidth);
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+  });
+}
+
+function init3DCarousel() {
+  if (window.innerWidth <= 768) return;
+
+  const cards = document.querySelectorAll('.service-card');
+  if (!cards.length) return;
+
+  let activeIndex = 0;
+  let autoSlideInterval;
+
+  function apply3DCarouselEffect() {
+    cards.forEach((card, i) => {
+      card.style.position = 'absolute';
+      card.style.opacity = '0';
+      card.style.zIndex = '0';
+      card.style.filter = 'blur(5px)';
+      card.style.transform = 'scale(0.8)';
+    });
+
+    const totalCards = cards.length;
+    const center = activeIndex % totalCards;
+    cards[center].style.opacity = '1';
+    cards[center].style.zIndex = '1';
+    cards[center].style.transform = 'none';
+    cards[center].style.filter = 'none';
+
+    for (let i = 1; i <= 3; i++) {
+      let rightIdx = (activeIndex + i) % totalCards;
+      let leftIdx = (activeIndex - i + totalCards) % totalCards;
+
+      cards[rightIdx].style.transform = `translateX(${120 * i}px) scale(${1 - 0.2 * i}) perspective(1000px) rotateY(-1deg)`;
+      cards[rightIdx].style.zIndex = -i;
+      cards[rightIdx].style.opacity = i > 2 ? 0 : 0.6;
+
+      cards[leftIdx].style.transform = `translateX(${-120 * i}px) scale(${1 - 0.2 * i}) perspective(1000px) rotateY(1deg)`;
+      cards[leftIdx].style.zIndex = -i;
+      cards[leftIdx].style.opacity = i > 2 ? 0 : 0.6;
+    }
+  }
+
+  cards.forEach((card, i) => {
+    card.addEventListener('click', () => {
+      if (i !== activeIndex) {
+        activeIndex = i;
+        apply3DCarouselEffect();
+      }
+    });
+    card.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    card.addEventListener('mouseleave', () => startAutoSlide());
+  });
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      activeIndex = (activeIndex + 1) % cards.length;
+      apply3DCarouselEffect();
+    }, 3000);
+  }
+
+  apply3DCarouselEffect();
+  startAutoSlide();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initMobileCarousel();
+  init3DCarousel();
+});
+
+</script>
+
+
+
+
+<section class="projects-section2" id="projects">
+    <div class="container2">
+        <div class="section-header2">
+            <h2>Our Projects</h2>
+
+        </div>
+
+        <div class="cards-wrapper2">
+
+            <div class="project-card2 card-left2">
+                <div class="card-content2" data-video-id="icwWpAHReWg">
+                    <img class="thumbnail2" src="https://img.youtube.com/vi/icwWpAHReWg/maxresdefault.jpg" alt="Project 1 Thumbnail" />
+                </div>
+            </div>
+          
+            <div class="project-card2 card-bottom-left2">
+                <div class="card-content2" data-video-id="A30YGfU3hEg">
+                    <img class="thumbnail2" src="https://img.youtube.com/vi/A30YGfU3hEg/maxresdefault.jpg" alt="Project 3 Thumbnail" />
+                </div>
+            </div>
+            <div class="project-card2 card-right2">
+                <div class="card-content2" data-video-id="4eIDBV4Mpek">
+                    <img class="thumbnail2" src="https://img.youtube.com/vi/4eIDBV4Mpek/maxresdefault.jpg" alt="Project 2 Thumbnail" />
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+<!-- Reels Starts -->
+    <div class="comm-section reels-section">
+      <div class="content-tag yellow center"></div>
+
+      <div class="reels-wrap">
+
+        <!-- Reel 1 -->
+        <div class="mob-frame mob-frame-1 tilt-left">
+          <!-- Volume + Power Buttons -->
+          <div class="side-buttons">
+            <div class="volume-button vol-1"></div>
+            <div class="volume-button vol-2"></div>
+            <div class="power-button"></div>
+          </div>
+
+          <div class="mob-video">
+            <video muted playsinline autoplay loop>
+              <source src="https://fusionhive.in/video/1.mp4">
+            </video>
+            <div class="speaker-toggle">
+              <img class="speaker-icon" src="https://fusionhive.in/assets/1/speaker-slash.svg" alt="Toggle Sound">
+            </div>
+          </div>
+
+          <div class="mob-bottom">
+            <div class="mob-bottom-name">
+              <img src="https://fusionhive.in/assets/img/banner/banner-man.png" alt="Client 1 Logo">
+              <p>Client 1st</p>
+            </div>
+            <div class="mob-bottom-likes">
+              <p>3M+ Views</p>
+              <img src="https://fusionhive.in/assets/1/acc-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 2 -->
+        <div class="mob-frame mob-frame-2 tilt-center">
+          <!-- Volume + Power Buttons -->
+          <div class="side-buttons">
+            <div class="volume-button vol-1"></div>
+            <div class="volume-button vol-2"></div>
+            <div class="power-button"></div>
+          </div>
+
+          <div class="mob-video">
+            <video muted playsinline autoplay loop>
+              <source src="https://fusionhive.in/video/2.mp4">
+            </video>
+            <div class="speaker-toggle">
+              <img class="speaker-icon" src="https://fusionhive.in/assets/1/speaker-slash.svg" alt="Toggle Sound">
+            </div>
+          </div>
+
+          <div class="mob-bottom">
+            <div class="mob-bottom-name">
+              <img src="https://fusionhive.in/assets/img/banner/banner-man.png" alt="Client 2 Logo">
+              <p>Client 2nd</p>
+            </div>
+            <div class="mob-bottom-likes">
+              <p>1.5M+ Views</p>
+              <img src="https://fusionhive.in/assets/1/acc-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 3 -->
+        <div class="mob-frame mob-frame-3 tilt-right">
+          <!-- Volume + Power Buttons -->
+          <div class="side-buttons">
+            <div class="volume-button vol-1"></div>
+            <div class="volume-button vol-2"></div>
+            <div class="power-button"></div>
+          </div>
+
+          <div class="mob-video">
+            <video muted playsinline autoplay loop>
+              <source src="https://fusionhive.in/video/3.mp4">
+            </video>
+            <div class="speaker-toggle">
+              <img class="speaker-icon" src="https://fusionhive.in/assets/1/speaker-slash.svg" alt="Toggle Sound">
+            </div>
+          </div>
+
+          <div class="mob-bottom">
+            <div class="mob-bottom-name">
+              <img src="https://fusionhive.in/assets/img/banner/banner-man.png" alt="Client 3 Logo">
+              <p>Client 3rd</p>
+            </div>
+            <div class="mob-bottom-likes">
+              <p>2.1M+ Views</p>
+              <img src="https://fusionhive.in/assets/1/acc-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+</section>
+
+<section id ="winning-carousel" class="winning-recipe-section3">
+  <div class="winning-recipe-container3">
+
+    <h4 class="winning-recipe-heading3">
+      Our Winning Recipe
+    </h4>
+
+    <div class="steps-wrapper3">
+      <!-- Step 1 -->
+      <div class="step-card3">
+        <h4 class="step-title3">Curation & Ideation</h4>
+        <div class="step-video3">
+          <video muted playsinline autoplay loop>
+            <source src="https://c39efe.p3cdn1.secureserver.net/wp-content/uploads/2023/12/ebf09b99-5b0d-4829-ae4b-679994c18e5d.mp4?time=1706848519" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card3">
+        <h4 class="step-title3">Editing & Animating</h4>
+        <div class="step-video3">
+          <video muted playsinline autoplay loop>
+            <source src="https://c39efe.p3cdn1.secureserver.net/wp-content/uploads/2023/12/8457bce4-2974-40a3-aa04-e42ec372ad24.mp4?time=1706848519" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card3">
+        <h4 class="step-title3">Posting & Management</h4>
+        <div class="step-video3">
+          <video muted playsinline autoplay loop>
+            <source src="https://c39efe.p3cdn1.secureserver.net/wp-content/uploads/2023/12/6c03aa63-f359-4d04-8ff5-4bc62f58c21a.mp4?time=1706848519" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="winning-dots">
+      <span class="winning-dot active"></span>
+      <span class="winning-dot"></span>
+      <span class="winning-dot"></span>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 468) {
+      const section = document.querySelector('#winning-carousel');
+      if (!section) return;
+
+      const wrapper = section.querySelector('.steps-wrapper3');
+      const dots = section.querySelectorAll('.winning-dots .winning-dot');
+      const cards = section.querySelectorAll('.step-card3');
+
+      function updateActiveDot() {
+        const scrollLeft = wrapper.scrollLeft;
+        const cardWidth = cards[0].offsetWidth + 16; // include gap
+        const index = Math.round(scrollLeft / cardWidth);
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[index]) dots[index].classList.add('active');
+      }
+
+      wrapper.addEventListener('scroll', () => {
+        window.requestAnimationFrame(updateActiveDot);
+      });
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          wrapper.scrollTo({
+            left: cards[idx].offsetLeft - 16, // match gap
+            behavior: 'smooth'
+          });
+        });
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+<section class="brand-section">
+  <div class="container">
+    <h2 class="brand-heading">
+      <span>DON’T JUST BE SEEN</span><br>BE REMEMBERED
+    </h2>
+    <p class="brand-subheading">
+      Visibility means nothing if people forget you the next second. Build a brand that stays in their minds long after they scroll past.
+    </p>
+
+    <div class="card-grid">
+
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card-content">
+              <h3>Attention is Currency</h3>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871779/plus_f82uh7.svg" class="plus-icon" alt="Plus Icon">
+            </div>
+            <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871781/rocket_ndjdgg.svg" class="decorative-img" alt="Rocket Decorative">
+          </div>
+          <div class="flip-card-back">
+            <div class="card-content">
+              <p>In a world of distractions, attention is the real asset. We’ll capture it, hold it, and turn it into long-term value for you.</p>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/arrow_owzigr.svg" class="arrow-icon" alt="Arrow Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card-content">
+              <h3>Your Brand, Our Expertise</h3>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871779/plus_f82uh7.svg" class="plus-icon" alt="Plus Icon">
+            </div>
+            <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/atom_srqevu.svg" class="decorative-img" alt="Atom Decorative">
+          </div>
+          <div class="flip-card-back">
+            <div class="card-content">
+              <p>You bring the vision, we bring the strategy. Together, we craft a brand that doesn’t just exist, but actually makes an impact. </p>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/arrow_owzigr.svg" class="arrow-icon" alt="Arrow Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card-content">
+              <h3>Multiply Your Content</h3>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871779/plus_f82uh7.svg" class="plus-icon" alt="Plus Icon">
+            </div>
+            <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871778/planets_l591dq.svg" class="decorative-img" alt="Planets Decorative">
+          </div>
+          <div class="flip-card-back">
+            <div class="card-content">
+              <p>One idea. Endless formats. Infinite reach. We help you turn every piece of content into a growth engine—so you get seen, heard, and remembered everywhere.</p>
+              <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871736/arrow_owzigr.svg" class="arrow-icon" alt="Arrow Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="client-testimonials-section">
+  <div class="container">
+    <h2 class="section-heading4">CLIENT TESTIMONIAL</h2>
+  </div>
+
+  <div class="testimonial-slider">
+
+    <!-- Fixed Decorative SVG (middle left) -->
+    <img src="images/sider-bg.svg" alt="sider-img" class="sider-bg">
+
+    <!-- Testimonial 1 -->
+    <div class="testimonial active">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875303/client-img1_watsdl.png" alt="David Abehsera" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>DAVID ABEHSERA</h3>
+          <p>CEO of NOOVEL</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>Their dedicated team is great with communicating my ideas. They don’t just craft content, but problem-solve, optimize, and figure out exactly what will work best for your brand and our clients.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875303/client-img2_w1avjl.png" alt="Bear Alexander" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>BEAR ALEXANDER</h3>
+          <p>NIAGARA - Athlete</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>I don’t have time to worry about content. FusionHive took care of everything—editing, structure, and even making sure my message came through clearly. Made my life so much easier for brand promotions.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875302/client-img3_tuepmc.png" alt="Joseph Abehsera" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>JOSEPH ABEHSERA</h3>
+          <p>CEO of VISIBLE IO</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>We’ve worked with agencies that overpromise and underdeliver. FusionHive is the opposite. They’re straight-up, deliver exactly what they say, and the quality speaks for itself.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875302/client-img4_qib49n.png" alt="Roxana Maddahi" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>ROXANA MADDAHI</h3>
+          <p>CEO of WEALTH MANAGEMENT | Content Creator</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>The difference between FusionHive and other agencies is that they actually understand branding and don't waste your time experimenting and help you grow on socials.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 5 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875302/client-img5_zv9fhg.png" alt="Ellis" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>ELLIS</h3>
+          <p>NIAGARA</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>FusionHive understands marketing just as well as they understand storytelling, which is why our social media numbers saw a huge boost after working with them.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 6 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img6_oolul0.png" alt="Mike Joyce" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>MIKE JOYCE</h3>
+          <p>Content Creator</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>I’m not a video expert. I just wanted someone to handle everything without making me overthink it. The way they did more than what I asked for is phenomenal.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 7 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img7_enppsg.png" alt="Chase" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>CHASE</h3>
+          <p>Youtuber (Bitcoin Express)</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>Videos cost money, and I’ve wasted plenty on teams that just didn’t get it. FusionHive was different. They actually made sure our content worked and we got more retention, not just views.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 8 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img8_vmiqc2.png" alt="Jose Crespo" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>JOSE CRESPO</h3>
+          <p>Content Creator</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>If you're reading this, give FusionHive a shot. There are so many agencies out there. I’m so happy I took a chance on them.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 9 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img9_jaazi5.png" alt="Mack Lorden" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>MACK LORDEN</h3>
+          <p>CEO | Content Creator</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>I don’t like a lot of back-and-forth. I want a team that gets the job done without stupid revisions. FusionHive delivered exactly what I wanted, no headaches.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 10 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img10_xox4x1.png" alt="Daniel Agachi" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>DANIEL AGACHI</h3>
+          <p>Content Creator</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>I’m extremely picky about details. FusionHive’s attention to detail is better than most human editors I’ve worked with. Literally. Give them a shot.</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 11 -->
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <div class="client-img-wrapper">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875301/client-img11_krgs11.png" alt="praful garg" class="client-img">
+        </div>
+        <div class="client-info">
+          <h3>Praful Garg</h3>
+          <p>Content Creator | Independent Journalist with 1.7m Followers</p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="inner-line"></div>
+        <div class="testimonial-text">
+          <p>Super sexy edits, Thankyou guys</p>
+        </div>
+        <div class="review-meta">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871780/review-verified_dgmhgu.svg" alt="Review Verified">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871782/stars_zkd6dh.svg" alt="5 stars">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dots for Slider Navigation -->
+  <div class="testimonial-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</section>
+
+
+
+<section class="clients-section5">
+  <div class="container5">
+    <h2 class="section-heading5">
+      OUR <span>CLIENTS</span>
+    </h2>
+
+    <div class="clients-slider5">
+
+      
+      <div class="clients-track5">
+        <!-- Client Logo + Divider -->
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871773/eyeball_lju63e.svg" alt="Eyeball" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875300/niagara1_p2itbt.png" alt="Niagara" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875299/everythingabouther1_jblr6x.png" alt="Everything About Tier" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871778/noovel_inuyuy.svg" alt="Noovel" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871737/acecrypto_nd1djp.svg" alt="Ace Crypto" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871776/mdrehablab_smpweo.svg" alt="MD Rehab Lab" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <!-- Duplicate logos for infinite loop -->
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871773/eyeball_lju63e.svg" alt="Eyeball" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875300/niagara1_p2itbt.png" alt="Niagara" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750875299/everythingabouther1_jblr6x.png" alt="Everything About Tier" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871778/noovel_inuyuy.svg" alt="Noovel" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871737/acecrypto_nd1djp.svg" alt="Ace Crypto" class="client-logo5" />
+        </div>
+        <div class="client-divider5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/divider_mrpm2c.svg" alt="image">
+        </div>
+
+        <div class="client-item5">
+          <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871776/mdrehablab_smpweo.svg" alt="MD Rehab Lab" class="client-logo5" />
+        </div>
+      </div>
+  <div class="udlline5">
+    <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/client-underline_kc0q1n.svg" alt="Underline" class="underline-image5">
+  </div>
+  </div>
+</section>
+
+
+<!-- contact us section -->
+<section class="contact-us-section" id="contact-us">
+  <div class="contact-header">
+    <h2>CONTACT US</h2>
+  </div>
+
+  <div class="contact-container">
+    <!-- Left Side -->
+    <div class="contact-left">
+      <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871776/gradient_etucjp.svg" alt="Gradient Background" class="gradient-bg" />
+      <div class="contact-text">
+        <p class="small-heading">DROP US A TEXT</p>
+        <h2>Let’s Chat <br>About Your Ideas</h2>
+        <p class="description">
+          Share one idea you’ve always wanted to <br> bring to reality and we’ll get back to <br>you to make it happen.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="contact-right">
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Company Name" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <label>Website</label>
+            <input type="url" name="website" placeholder="https://" />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label>I'm Interested In</label>
+          <input type="text" name="interest" placeholder="Video Editing" />
+        </div>
+
+        <div class="form-group full-width">
+          <label>What's your idea</label>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Make My Idea Happen</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="case-study-section">
+  <div class="case-study-container">
+    <!-- Left Image (Person) -->
+    <div class="case-study-image">
+      <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871738/case-study-img_zrbmxq.svg" alt="MDRehab Person" />
+    </div>
+
+    <!-- Right Content -->
+    <div class="case-study-content">
+      <h2><span>CASE</span> STUDY</h2>
+      <div class="case-study-text">
+        <p>
+          MDrehab clearly understood how to fix a patient. But when it came to fixing their social media, they had constant failures.
+        </p>
+        <p>
+          Reel after reel, their view count kept falling until we stepped in (Month, Date). Along with our creative direction, we brought 
+          storytelling, better visuals, and crisper scripts, which boosted them from 212k to 450k followers within a few weeks.
+        </p>
+        <p>
+          Today, MDRehab receives 4M+ views every single month.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact6" id="about-us">
+  <div class="contact-heading6">
+    <h2>Get in Touch with Us Today!</h2>
+    <p>At FusionHive, we value your inquiries, feedback, and collaborations. Whether you are interested in our services, have questions about our projects, or want to explore potential partnerships, we encourage you to reach out to our dedicated team. Connect with us through any of the channels below, and we’ll be delighted to assist you.</p>
+  </div>
+
+  <div class="contact-container6">
+    <div class="contact-info6">
+      <div class="logo-circle6">
+        <img src="https://res.cloudinary.com/dvabb4elb/image/upload/v1750871774/foter-logo_qytot1.svg" alt="FusionHive Logo" class="svg-logo6" lazyload="true">
+      </div>
+      <div class="contact-actions6">
+        <a href="tel:+919755317492" class="pill-button6">
+          <span class="pill-icon6">📞</span>
+          <span class="pill-text6">+91 97553 17492</span>
+          <span class="pill-arrow6">➔</span>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@fusionhive.in" target="_blank" class="pill-button6">
+          <span class="pill-icon6">📧</span>
+          <span class="pill-text6">info@fusionhive.in</span>
+          <span class="pill-arrow6">➔</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="map-container6">
+      <iframe 
+        src="https://maps.google.com/maps?q=Pune%2C%20Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+
+      <button class="direction-button6">Get Direction ➔</button>
+
+      <div class="social-media6">
+        <p>Stay updated with our latest projects, industry insights, and company news by following us on social media</p>
+        <div class="icons6">
+          <a href="https://www.instagram.com/fusionhive.co"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/company/fusionhive/"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+          <a href="https://www.twitter.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer6">
+    <div class="footer-columns6">
+      <div>
+        <h4>Home</h4>
+        <ul>
+          <li>Benefits</li>
+          <li>Testimonials</li>
+          <li>Partners</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Video Editing</li>
+          <li>AI Ads & Promotions</li>
+          <li>Full Video Production</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Technologies</h4>
+        <ul>
+          <li>Figma</li>
+          <li>DaVinci</li>
+          <li>Blender</li>
+        </ul>
+      </div>
+      <div>
+        <h4>About Us</h4>
+        <ul>
+          <li>Our Team</li>
+          <li>Achievements</li>
+          <li>Awards</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom6">
+      <p>©2025 FusionHive. All Rights Reserved.</p>
+      <p>Version 1.0 | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cookie Policy</a></p>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</html>

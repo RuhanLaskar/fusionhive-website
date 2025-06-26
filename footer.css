@@ -1,0 +1,310 @@
+.contact6 {
+  position: relative;
+  background-color: transparent; /* fallback color */
+  background-image: url('https://res.cloudinary.com/dvabb4elb/image/upload/v1750871777/footer-bg_cns2ly.svg'); /* replace with your file path */
+  background-size: 1300px 1050px; /* adjust size as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 150px 30px 30px 30px;
+  max-width: 1309px;
+  margin: 0 auto 0;
+}
+
+.contact-heading6 {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.contact-heading6 h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-container6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* NEW: align tops of left and right */
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-info6 {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px; /* ADD THIS */
+}
+
+.logo-circle6 {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 20px auto; /* centers it horizontally */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-logo6 {
+  width: 200px;
+  height: 200px;
+}
+
+.map-container6 {
+    margin: 0 auto;
+    width: 600px ;
+  min-width: 300px;
+  position: relative;
+}
+
+.map-container6 iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  border: none;
+}
+
+.direction-button6 {
+  margin-top: 10px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.social-media6 {
+    justify-content: center;
+    margin: 0 auto;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.icons6 {
+  margin-top: 10px;
+}
+
+.icons6 a {
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.icons6 img {
+  width: 30px;
+  height: 30px;
+}
+
+.site-footer6 {
+  border-top: 1px solid #444;
+  padding-top: 30px;
+}
+
+.footer-columns6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-columns6 > div {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-columns6 h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-columns6 ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-bottom6 {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.footer-bottom6 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-actions6 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pill-button6 {
+    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: white;
+  text-decoration: none;
+  width: 220px;
+  max-width: 350px;
+  transition: background 0.3s ease;
+}
+
+.pill-button6:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pill-icon6 {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.pill-text6 {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pill-arrow6 {
+  background-color: rgba(61, 55, 55, 0.08);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.footer-columns6 > div:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-heading6 h2{
+    font-size: 1.8rem;
+  }
+  .contact-heading6 p {
+    font-size: 0.9rem;
+  }
+  .svg-logo6 {
+    width: 300px;
+    height: 180px;
+  }
+  .map-container6 {
+    width: 500px;
+  }
+  .contact-actions6 {
+    font-size: 1px;
+  }
+  .social-media6 p {
+    font-size: 0.8rem;
+  }
+  .footer-columns6 h4 {
+    font-size: 14px;
+  }
+  .footer-columns6 ul {
+    font-size: 0.8rem;
+  }
+
+  .contact6 {
+    padding: 100px 20px 20px 20px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 468px) {
+  .contact6 {
+    padding: 80px 10px 20px 10px;
+    background-image: none;
+  }
+  .contact-info6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .contact-heading6 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-heading6 p {
+    display: none;
+  }
+
+  .logo-circle6 {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .svg-logo6 {
+    width: 80px;
+    height: 70px;
+  }
+
+  .contact-actions6 {
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .pill-button6 {
+    width: 100%;
+    max-width: 230px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .pill-icon6 {
+    font-size: 16px;
+  }
+
+  .pill-text6 {
+    font-size: 13px;
+  }
+
+  .pill-arrow6 {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+  .footer-columns6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .footer-columns6 > div {
+    text-align: left;
+  }
+
+  /* Right-align the 3rd and 4th sections only */
+  .footer-columns6 > div:nth-child(3),
+  .footer-columns6 > div:nth-child(4) {
+    text-align: left;
+  }
+
+  .footer-columns6 ul {
+    padding-left: 0;
+    margin: 0;
+  }
+}

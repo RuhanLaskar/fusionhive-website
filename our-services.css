@@ -1,0 +1,318 @@
+/* Section Styling */
+.services-section {
+  position: relative;
+  padding: 120px 80px 20px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Background SVG */
+.spiral-bg {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Heading Section */
+.heading-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 43.604px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  background: linear-gradient(90deg, #6268AA 12.54%, #8F98FF 44.72%, #9A4281 55.78%, #AC134B 99.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    margin: 0.2rem auto 0;
+    width: 320px;
+    height: 6px;
+    background-image: url('https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/client-Line_swpeyd.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.underline {
+  display: block;
+  width: 340px;
+  margin: 0 auto 0;
+}
+
+.subheading1 {
+  font-family: 'Rubik', sans-serif;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  max-width: 1309px;
+  margin: 0 auto;
+  padding: 10%;
+  margin-top: 40px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  perspective: 1000px;
+  width: 100%;
+}
+
+
+/* Service Card (Shared Styles) */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  /* Remove these two lines ↓ */
+  /* left: 50%;
+  transform: translateX(-50%); */
+
+  transition: transform 0.6s ease, opacity 0.6s ease, filter 0.6s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+
+/* Card Top */
+.card-top {
+  position: relative;
+  padding: 20px;
+  color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  background-color: transparent;
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.icon {
+  position: absolute;
+  width: 78px;
+  z-index: 1;
+  top: 20%;
+  left: 60%;
+}
+
+.card-title {
+  position: relative;
+  font-family: 'Sora', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 1;
+  line-height: 1.2;
+}
+
+/* Card Bottom */
+.card-bottom {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  font-size: 13px;
+  color: #111;
+}
+
+.card-bottom strong {
+  display: block;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* Dot Navigation (if needed in future) */
+
+
+/* Responsive: Stack cards on smaller screens */
+@media (max-width: 1100px) {
+  .service-card {
+    width: 220px;
+  }
+  .spiral-bg {
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1100px;
+    width: 950px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+  .section-heading::after {
+    width: 200px;
+  }
+  .subheading1 {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 600px;
+  }
+  .icon {
+    position: absolute;
+    width: 58px;
+    z-index: 1;
+    top: 20%;
+    left: 65%;
+  }
+  .card-title {
+    position: relative;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 1;
+    line-height: 1.2;
+  }
+
+}
+
+
+@media (max-width: 468px) {
+  .services-section {
+    padding: 60px 20px 20px;
+    overflow: hidden;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-heading::after {
+    width: 180px;
+  }
+
+  .subheading1 {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-left: 10px;
+    padding: 0 1px;
+  }
+
+  .cards-slider {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  .service-card {
+    all: unset;
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    max-width: 80%;
+    min-width: 70%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff; /* optional for contrast */
+    padding-top: 0;
+    border-radius: 20px;
+    position: relative !important;
+    opacity: 1 !important;
+    z-index: auto !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .mobile-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 6px;
+  }
+
+  .mobile-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .mobile-dots .dot.active {
+    background: #6268AA;
+  }
+}
+
+
+/* Hide dot nav by default on larger screens */
+@media (min-width: 469px) {
+  .mobile-dots {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,124 @@
+.case-study-section {
+  background: transparent ;
+  color: #fff;
+}
+
+.case-study-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1309px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.case-study-image img {
+  max-width: 470px;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.case-study-content {
+    flex: 1;
+    width: 100%;
+}
+
+.case-study-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background:  linear-gradient(to right, #6268AA 0.51%, #8F98FF 3%, #9A4281 50%, #AC134B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.case-study-content h2::after {
+  content: '';
+  display: block;
+  margin-left: 5px;
+  width: 280px;
+  height: 6px;
+  text-align: left;
+  background-image: url('https://res.cloudinary.com/dvabb4elb/image/upload/v1750871772/client-Line_swpeyd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.case-study-text p {
+    margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  background: #000068
+}
+
+@media screen and (max-width:1100px) {
+  .case-study-container {
+    padding: 1rem;
+  }
+  .case-study-section h2 {
+    font-size: 34px;
+    margin-bottom: 4rem;
+  }
+  .case-study-section h2::after {
+    width: 200px;
+  }
+  .case-study-image img {
+    max-width: 100%;
+  }
+  .case-study-text p {
+    font-size: 1rem;
+  } 
+}
+
+@media (max-width: 468px) {
+  .case-study-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .case-study-image {
+    flex: 0 0 auto;
+    width: 110px; /* Reduce image width */
+  }
+
+  .case-study-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .case-study-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .case-study-content h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .case-study-content h2::after {
+    width: 140px;
+    height: 3px;
+    margin: 0;
+  }
+
+  .case-study-text p {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+}
+
